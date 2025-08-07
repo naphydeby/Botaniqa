@@ -1,0 +1,133 @@
+import {NextResponse} from 'next/server';
+const products = [
+  {
+    id: 1,
+    name: 'Detox Herbal Tea',
+    description: 'A natural tea blend of ginger, dandelion, and mint that helps cleanse the liver and boost metabolism.',
+    price: 3000,
+    image: '/image/Detoxherbaltea.jpg',
+  },
+  {
+    id: 2,
+    name: 'Immunity Boost Tea',
+    description: 'A revitalizing mix of turmeric, echinacea, and lemongrass to strengthen immunity',
+    price: 3000,
+    image: '/image/immunebooster.jpg',
+  },
+  {
+    id: 3,
+    name: 'Baby Herbal Oil',
+    description: 'Gentle baby oil with calendula and chamomile for delicate skin.',
+    price: 1500,
+    image: '/image/babyherbaloil.jpg',
+  },
+   {
+    id: 4,
+    name: 'Lemongrass & Ginger Soap',
+    description: 'Energizing herbal soap that refreshes and exfoliates the skin.',
+    price: 2000,
+    image: '/image/lemongrassandgingersoap.jpg',
+  },
+   {
+    id: 5,
+    name: 'Weight Loss Tea',
+    description: ' A metabolism-boosting blend with green tea, garcinia, and hibiscus for natural weight management.',
+    price: 3000,
+    image: '/image/weightloss.jpg',
+  },
+   {
+    id: 6,
+    name: 'Neem Face Wash',
+    description: 'Herbal cleanser that controls oil and clears acne using neem and turmeric. ',
+    price: 2500,
+    image: '/image/facewash.jpg',
+  },
+   {
+    id: 7,
+    name: 'Herbal Powder Mix ',
+    description: 'Smoothie-ready mix of baobab, maca, and spirulina for energy and wellness.',
+    price: 2000,
+    image: '/image/herbalpowder.jpg',
+  },
+   {
+    id: 8,
+    name :'Hair Growth Oil',
+    description: 'Enriched with chebe, rosemary, and fenugreek for strong and healthy hair growth.',
+    price: 3000,
+    image: '/image/hairgrowthoil.jpg',
+  },
+   {
+    id: 9,
+    name: 'Herbal Bitters',
+    description: 'Traditional digestive tonic made with bitter herbs to improve gut health.',
+    price: 2500,
+    image: '/image/herbalbitters.jpg',
+  },
+   {
+    id: 10,
+    name: 'Beard Growth Oil',
+    description: 'Nourishing oil blend to boost beard growth and soften facial hair.',
+    price: 4000,
+    image: '/image/bardoil.jpg',
+  },
+   {
+    id: 11,
+    name: 'Herbal Capsules',
+    description: 'Pure moringa or bitter leaf capsules for daily herbal supplementation.',
+    price: 3500,
+    image: '/image/capsule.jpg',
+  },
+   {
+    id: 12,
+    name: 'Calendula Body Butter',
+    description: 'Luxurious herbal body butter that deeply moisturizes and nourishes dry skin.',
+    price: 5000,
+    image: '/image/bodybutter.jpg',
+  },
+   {
+    id: 13,
+    name: 'Massage Oil ',
+    description: 'Relaxing oil blend with eucalyptus, peppermint, and lavender for pain and stress relief.',
+    price: 4500,
+    image: '/image/massageoil.jpg',
+  },
+   {
+    id: 14,
+    name: 'Shea Butter & Herbal Soap',
+    description: 'Rich, creamy soap infused with shea butter and soothing herbal extracts.',
+    price: 3000,
+    image: '/image/sheabuttersoap.jpg',
+  },
+   {
+    id: 15,
+    name: 'Acne Cream',
+    description: 'Powerful detox herbal drink.',
+    price: 4500,
+    image: '/image/moringacream.jpg',
+  },
+   {
+    id: 16,
+    name: 'Pain Relief Balm',
+    description: 'Warming balm with menthol, camphor, and arnica to soothe muscle and joint pain.',
+    price: 2000,
+    image: '/image/balm.jpg',
+  },
+   {
+    id: 17,
+    name: 'Activated Charcoal Soap',
+    description: 'Deep cleansing soap that detoxifies the skin and unclogs pores. ',
+    price: 12000,
+    image: '/image/charcoalsoap.jpg',
+  },
+   {
+    id: 18,
+    name: 'Immunity Syrup ',
+    description: ' Natural syrup blend with black seed oil, ginger, and honey to fight colds and flu.',
+    price: 3500,
+    image: '/image/immunitysyrub.jpg',
+  },
+];
+export async function GET(){
+    return NextResponse.json(products);
+}
+
