@@ -23,16 +23,16 @@ const HerbsList = () => {
       fetchFeatureProduct();
      },[]);
   return (
-   <div>
-    <section className='w-full  h-[40vh] flex flex-col py-6 items-center' >
-    <div className='container mx-auto px-4 flex flex-col items-center space-y-6'>
-      <h2 className='text-5xl font-bold text-green-800 text-center'>Featured Healing Herbs</h2>
-      <p className='text-2xl'>Discover our carefully selected herbs, each with unique healing properties
+   <div id='herbs'className='py-20'>
+    <section className='w-full   flex flex-col  items-center py-12' >
+    <div className='container mx-auto px-4 flex flex-col text-center space-y-4'>
+      <h2 className='text-4xl lg:text-5xl font-bold text-green-800 text-center'>Featured Healing Herbs</h2>
+      <p className='text-xl max-w-2xl mx-auto'>Discover our carefully selected herbs, each with unique healing properties
          backed by centuries of traditional use and modern research.
      </p>
     </div>
    </section>
-   <section className='container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 ' >
+   <section className='grid md:grid-cols-2 lg:grid-cols-3  gap-6 ' >
      {loading?(
        <p className='text-center col-span-full'>Loading...</p>
       ):(

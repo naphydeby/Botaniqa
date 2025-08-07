@@ -10,17 +10,17 @@ const Navbar = () => {
 
   return (
     
-    <div className='sticky top-0 left-0 w-full z-50'>
+    <div className='sticky top-0  w-full z-50'>
      <nav className='bg-white/90 backdrop-blur-sm shadow-md  '>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
            <div className='flex justify-between items-center py-4 font-semibold'>
-             <div className='flex animate-pulse '>
+             <div className='flex animate-pulse ' >
              <Image src="/image/leaf.jpeg" alt="logo" width={50} height={50} />
             <h1 className='mt-2 text-green-800'>Botaniqa</h1>
         </div>
         {/* desktop Navigation */}
             <div className=' text-green-800 hidden md:flex space-x-4'>
-           <Link href="/" className='hover:text-green-500 cursor-pointer'>Home</Link>
+           <Link href="#home" className='hover:text-green-500 cursor-pointer'>Home</Link>
             <Link href="#herbs" className='hover:text-green-500 cursor-pointer'>Herbs</Link>
             <Link href="#products" className='hover:text-green-500 cursor-pointer'>Products</Link>
             <Link href="#services" className='hover:text-green-500 cursor-pointer'>Services</Link>

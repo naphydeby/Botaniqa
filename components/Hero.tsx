@@ -6,13 +6,13 @@ import { Button } from './ui/button';
 const Hero = () => {
    
   return (
-    <section className='bg-cover bg-center bg-no-repeat  ' style={{ backgroundImage: 'url(/image/basil.jpg)' }}>
-    <div className='container mx-auto px-2 py-20 text-center'>
-        <div className='flex flex-col space-y-12  h-full '>
-                <h1 className='text-5xl md:text-6xl font-bold '>Natural Healing Through
+    <section className='bg-cover bg-center bg-no-repeat  py-20 ' style={{ backgroundImage: 'url(/image/basil.jpg)' }} id='home'>
+    <div className='container mx-auto px-2 py-18 text-center'>
+        <div className='flex flex-col space-y-12   '>
+                <h1 className='text-4xl lg:text-5xl md:text-6xl font-bold '>Natural Healing Through
                  <span className='text-green-600 font-bold animate-pulse'> Herbal <br /> Wisdom</span>
                 </h1>
-            <p className='text-2xl '>
+            <p className='text-2xl text-green-600 '>
              Discover the ancient power of herbs for modern wellness. Premium botanical products, 
               expert consultations, and sustainable healing solutions for your journey to natural health.
             </p>

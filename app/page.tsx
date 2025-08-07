@@ -7,7 +7,7 @@ import Hero from '@/components/Hero'
 import Contact from '@/components/Contact'
 const page = () => {
   return (
-    <div className='space-y-20'>
+    <div className='min-h-screen'>
       <Hero  /> 
       <Herbs />
       <Product />
