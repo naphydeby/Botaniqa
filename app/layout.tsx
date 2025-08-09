@@ -2,6 +2,24 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import { Toaster } from "sonner";
+import { Inter, Poppins } from "next/font/google";
+
+
+
+
+// Inter for body text
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+
+// Poppins for headings
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"], // adjust weights as needed
+  variable: "--font-poppins",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,12 +42,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar/>
         <main>{children}</main>
+          <Toaster richColors position="top-right" />
       </body>
     </html>
   );
