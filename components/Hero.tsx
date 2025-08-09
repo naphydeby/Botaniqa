@@ -2,7 +2,8 @@
 import React from 'react'
 import {  ChevronRight } from "lucide-react";
 
-import { Button } from './ui/button';
+// import { Button } from './ui/button';
+import Link from 'next/link';
 const Hero = () => {
    
   return (
@@ -17,10 +18,10 @@ const Hero = () => {
               expert consultations, and sustainable healing solutions for your journey to natural health.
             </p>
             <div className=' flex flex-col md:flex-row justify-center  gap-4   '>
-                {/* <Link href='#herbs'  className='bg-green-600 hover:bg-green-500 text-lg px-8 py-4 rounded-md text-white font-semibold transition-all duration-300 transform hover:scale-105 flex cursor-pointer'> Explore Our Herbs <ChevronRight className="ml-2 h-5 w-5 mt-1  " /></Link>
-                <Link href='#contact' className='bg-white border-1 border-green-600 hover:bg-green-50 text-lg px-8 py-4 rounded-md text-green-600 font-semibold cursor-pointer'>Book Consultation</Link> */}
-               <Button   className='bg-green-600 hover:bg-green-500 text-lg px-8 py-4 h-12 rounded-md text-white font-semibold transition-all duration-300 transform hover:scale-105 flex cursor-pointer'> Explore Our Herbs <ChevronRight className="ml-2 h-5 w-5 mt-1  " /></Button>
-                <Button  className='bg-white border-1 border-green-600 hover:bg-green-50 text-lg px-8 py-4 h-12 rounded-md text-green-600 font-semibold cursor-pointer'>Book Consultation</Button>
+                <Link href='#herbs'  className='bg-green-600 hover:bg-green-500 text-lg px-8 py-4 rounded-md text-white font-semibold transition-all duration-300 transform hover:scale-105 flex cursor-pointer'> Explore Our Herbs <ChevronRight className="ml-2 h-5 w-5 mt-1  " /></Link>
+                <Link href='#contact' className='bg-white border-1 border-green-600 hover:bg-green-50 text-lg px-8 py-4 rounded-md text-green-600 font-semibold cursor-pointer'>Book Consultation</Link>
+               {/* <Button   className='bg-green-600 hover:bg-green-500 text-lg px-8 py-4 h-12 rounded-md text-white font-semibold transition-all duration-300 transform hover:scale-105 flex cursor-pointer'> Explore Our Herbs <ChevronRight className="ml-2 h-5 w-5 mt-1  " /></Button>
+                <Button  className='bg-white border-1 border-green-600 hover:bg-green-50 text-lg px-8 py-4 h-12 rounded-md text-green-600 font-semibold cursor-pointer'>Book Consultation</Button> */}
 
             </div>
         </div>
