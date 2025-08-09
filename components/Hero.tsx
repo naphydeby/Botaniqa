@@ -19,8 +19,24 @@ const Hero = () => {
             <div className=' flex flex-col md:flex-row justify-center  gap-4   '>
                 {/* <Link href='#herbs'  className='bg-green-600 hover:bg-green-500 text-lg px-8 py-4 rounded-md text-white font-semibold transition-all duration-300 transform hover:scale-105 flex cursor-pointer'> Explore Our Herbs <ChevronRight className="ml-2 h-5 w-5 mt-1  " /></Link>
                 <Link href='#contact' className='bg-white border-1 border-green-600 hover:bg-green-50 text-lg px-8 py-4 rounded-md text-green-600 font-semibold cursor-pointer'>Book Consultation</Link> */}
-               <Button   className='bg-green-600 hover:bg-green-500 text-lg px-8 py-4 h-12 rounded-md text-white font-semibold transition-all duration-300 transform hover:scale-105  flex items-center justify-center cursor-pointer'> Explore Our Herbs <ChevronRight className="ml-2 h-5 w-5 mt-1  " /></Button>
-                <Button  className='bg-white border-1 border-green-600 hover:bg-green-50 text-lg px-8 py-4 h-12 rounded-md text-green-600 font-semibold cursor-pointer'>Book Consultation</Button>
+               <Button 
+                onClick={() => {
+                const section = document.getElementById("herbs");
+                if (section) {
+                 section.scrollIntoView({ behavior: "smooth" });
+               }
+               }}
+               className='bg-green-600 hover:bg-green-500 text-lg px-8 py-4 h-12 rounded-md text-white font-semibold transition-all duration-300 transform hover:scale-105  flex items-center justify-center cursor-pointer'>
+                 Explore Our Herbs <ChevronRight className="ml-2 h-5 w-5 mt-1  " /></Button>
+                <Button 
+                 onClick={() => {
+                const section = document.getElementById("contact");
+                if (section) {
+               section.scrollIntoView({ behavior: "smooth" });
+               }
+               }}
+                className='bg-white border-1 border-green-600 hover:bg-green-50 text-lg px-8 py-4 h-12 rounded-md text-green-600 font-semibold cursor-pointer'>
+                  Book Consultation</Button>
 
             </div>
         </div>
